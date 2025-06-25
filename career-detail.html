@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>รายละเอียดอาชีพ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="career-detail"></div>
+
+  <script src="js/careers.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const careerId = params.get("id");
+    const career = careers.find(c => c.id === careerId);
+    const detailDiv = document.getElementById("career-detail");
+
+    if (career) {
+      detailDiv.innerHTML = `
+        <h1>${career.name}</h1>
+            <img src="${career.image}" alt="${career.name}" class="career-img">
+            <p><strong>คำอธิบาย:</strong> ${career.description}</p>
+            <p><strong>ทักษะที่ควรมี:</strong> ${career.skills.join(", ")}</p>
+            <p><strong>เงินเดือนเฉลี่ย:</strong> ${career.salary}</p>
+            <p><strong>แนวทางการเรียนรู้:</strong> ${career.path}</p>
+            <p><a href="index.html">← กลับหน้าอาชีพทั้งหมด</a></p>
+        `;
+    } else {
+      detailDiv.innerHTML = `<p>ไม่พบข้อมูลอาชีพนี้</p>`;
+    }
+  </script>
+</body>
+</html>

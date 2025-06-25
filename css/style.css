@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #f5f9ff;
+}
+
+h1 {
+  color: #336699;
+}
+
+.career-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.career-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
