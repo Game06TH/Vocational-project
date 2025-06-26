@@ -1,27 +1,41 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-  <meta charset="UTF-8">
-  <title>แนะนำอาชีพสายไอที</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h1>แนะนำอาชีพสายเทคโนโลยีสารสนเทศ</h1>
-  <div id="career-list"></div>
+<!DOCTYPE html> 
+<html lang="th"> 
+<head> 
+  <meta charset="UTF-8">   
+  <title>แนะนำอาชีพสายไอที</title>   
+  <link rel="stylesheet" href="css/style.css">   
+</head> 
+<body>  
+  <header class="main-header">
+    <h1>แนะนำอาชีพสายเทคโนโลยีสารสนเทศ</h1>
+  </header>
 
-  <script src="js/careers.js"></script>
-  <script>
+  <div id="career-list"></div>  
+  <script src="js/careers.js"></script>  
+  
+  <script> 
     const listDiv = document.getElementById('career-list');
-    careers.forEach(career => {
-    listDiv.innerHTML += `
+    let htmlContent = '';
+
+    careers.forEach(career => { 
+      htmlContent += `
         <div class="career-card">
             <img src="${career.image}" alt="${career.name}" class="career-img">
             <h2>${career.name}</h2>
             <p>${career.description}</p>
             <a href="career-detail.html?id=${career.id}">ดูรายละเอียด</a>
         </div>
-    `;
+      `;
     });
+
+    listDiv.innerHTML = htmlContent; 
   </script>
+
+  <footer class="main-footer">
+    <p>แบบสอบถามความพึงพอใจเว็บไซต์ Google Form 
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScYBG7vNxB0bvDSB1YM5e28NuLo_iQdgjZqcWWcAK8uNJ6aHw/viewform?usp=header" target="_blank">คลิกเพื่อตอบแบบสอบถาม</a>
+    </p>
+  
+  </footer>
 </body>
 </html>
