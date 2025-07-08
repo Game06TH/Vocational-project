@@ -6,7 +6,9 @@ const careers = [
     skills: ["Java", "C#", "Python", "JavaScript"],
     salary: "30,000 - 100,000 บาท",
     path: "เรียนสายคอมพิวเตอร์ / วิศวกรรมซอฟต์แวร์",
-    image: ""
+    image: "img/Software Developer.png",
+    detail: "พัฒนาแอปพลิเคชันหรือระบบซอฟต์แวร์เพื่อใช้งานในองค์กรหรือกับลูกค้า อาชีพนี้มีบทบาทสำคัญต่อธุรกิจยุคดิจิทัลและมีแนวโน้มเติบโตสูง",
+    trend: "ความต้องการสูงจากธุรกิจทุกประเภทที่ต้องการพัฒนาระบบเฉพาะของตัวเอง"
   },
   {
     id: "web-dev",
@@ -15,7 +17,9 @@ const careers = [
     skills: ["HTML", "CSS", "JavaScript", "Git", "React"],
     salary: "18,000 - 40,000 บาท",
     path: "เรียนสาย IT / เรียนรู้จากคอร์สออนไลน์",
-    image: ""
+    image: "img/web-developer.png",
+    detail: "สร้างและดูแลเว็บไซต์ทั้งด้านผู้ใช้และระบบหลังบ้าน มีความต้องการสูงในธุรกิจออนไลน์และเป็นจุดเริ่มต้นที่ดีของสายอาชีพ IT",
+    trend: "เว็บไซต์ยังคงเป็นเครื่องมือหลักของธุรกิจออนไลน์ ส่งผลให้อาชีพนี้ยังเติบโตต่อเนื่อง"
   },
   {
     id: "mobile-app-dev",
@@ -24,7 +28,9 @@ const careers = [
     skills: ["Swift", "Kotlin", "Flutter", "React Native"],
     salary: "30,000 - 90,000 บาท",
     path: "เรียนสายพัฒนาแอป / วิศวกรรมซอฟต์แวร์",
-    image: ""
+    image: "img/Mobile App Developer.png",
+    detail: "รับผิดชอบการสร้างและดูแลแอปมือถือเพื่อใช้งานจริงในธุรกิจหรือบริการต่าง ๆ",
+    trend: "ผู้คนใช้มือถือมากขึ้น แอปจึงเป็นสิ่งจำเป็นและอาชีพนี้มีแนวโน้มเติบโตสูง"
   },
   {
     id: "game-dev",
@@ -33,7 +39,9 @@ const careers = [
     skills: ["Unity", "C#", "Unreal Engine", "3D Modeling"],
     salary: "35,000 - 80,000 บาท",
     path: "เรียนพัฒนาเกม / วิศวกรรมคอมพิวเตอร์",
-    image: ""
+    image: "img/Game Developer.avif",
+    detail: "ทำงานร่วมกับทีมนักออกแบบและโปรแกรมเมอร์เพื่อพัฒนาเกมคุณภาพสูง",
+    trend: "อุตสาหกรรมเกมทั่วโลกเติบโตเร็ว โดยเฉพาะในเกมมือถือและ VR"
   },
   {
     id: "devops",
@@ -42,7 +50,9 @@ const careers = [
     skills: ["Docker", "Jenkins", "Linux", "Kubernetes"],
     salary: "50,000 - 120,000 บาท",
     path: "เรียนสายระบบ / Network หรือ Cloud",
-    image: ""
+    image: "img/DevOps Engineer.webp",
+    detail: "ทำหน้าที่รวมระบบพัฒนาและระบบปฏิบัติการเข้าด้วยกันเพื่อให้การส่งมอบรวดเร็ว",
+    trend: "นิยมมากขึ้นในองค์กรที่ทำ Agile และ Cloud-native"
   },
   {
     id: "cloud-eng",
@@ -51,7 +61,9 @@ const careers = [
     skills: ["AWS", "Azure", "GCP", "Terraform"],
     salary: "50,000 - 120,000 บาท",
     path: "เรียนคลาวด์คอมพิวติ้ง / วิศวกรรมคอมพิวเตอร์",
-    image: ""
+    image: "img/Cloud Engineer.jpg",
+    detail: "รับผิดชอบวางโครงสร้างระบบบนคลาวด์และจัดการทรัพยากรให้มีประสิทธิภาพ",
+    trend: "องค์กรย้ายระบบขึ้นคลาวด์มากขึ้น ทำให้อาชีพนี้สำคัญและขาดแคลน"
   },
   {
     id: "cybersecurity",
@@ -60,7 +72,9 @@ const careers = [
     skills: ["Firewall", "SIEM", "Python", "Ethical Hacking"],
     salary: "40,000 - 90,000 บาท",
     path: "เรียนด้านความปลอดภัยไซเบอร์ / IT Security",
-    image: ""
+    image: "img/Cybersecurity Analyst.jpeg",
+    detail: "ตรวจจับและตอบสนองต่อการโจมตีไซเบอร์ ปกป้องข้อมูลสำคัญขององค์กร",
+    trend: "ภัยคุกคามไซเบอร์เพิ่มขึ้น องค์กรต้องการผู้เชี่ยวชาญเพิ่มมากขึ้นทุกปี"
   },
   {
     id: "ml-engineer",
@@ -69,7 +83,9 @@ const careers = [
     skills: ["Python", "TensorFlow", "Pandas", "Scikit-learn"],
     salary: "50,000 - 120,000 บาท",
     path: "เรียนสายข้อมูล / ปัญญาประดิษฐ์",
-    image: ""
+    image: "img/Machine Learning Engineer.png",
+    detail: "สร้างระบบที่เรียนรู้จากข้อมูลและนำไปใช้ในการคาดการณ์หรือวิเคราะห์",
+    trend: "เทคโนโลยี AI ถูกนำไปใช้ในทุกอุตสาหกรรม ทำให้ต้องการบุคลากรสายนี้มากขึ้น"
   },
   {
     id: "data-scientist",
@@ -78,7 +94,9 @@ const careers = [
     skills: ["Python", "R", "SQL", "Machine Learning"],
     salary: "50,000 - 150,000 บาท",
     path: "เรียน Data Science / วิทยาการคอมพิวเตอร์",
-    image: ""
+    image: "img/Data Scientist.jpg",
+    detail: "ใช้ข้อมูลจำนวนมหาศาลเพื่อสร้างโมเดลวิเคราะห์และทำนายแนวโน้ม",
+    trend: "อาชีพนี้เป็นที่ต้องการสูงในองค์กรที่เน้น Data-Driven"
   },
   {
     id: "ai-specialist",
@@ -87,7 +105,9 @@ const careers = [
     skills: ["Deep Learning", "Neural Networks", "Python", "TensorFlow"],
     salary: "60,000 - 150,000 บาท",
     path: "เรียนปัญญาประดิษฐ์ / วิทยาการข้อมูล",
-    image: ""
+    image: "img/AI Specialist.webp",
+    detail: "เชี่ยวชาญด้านเทคโนโลยีปัญญาประดิษฐ์เพื่อพัฒนาแอปพลิเคชันอัจฉริยะ",
+    trend: "เทคโนโลยี AI เข้ามามีบทบาทในชีวิตประจำวันและภาคธุรกิจเพิ่มขึ้น"
   },
   {
     id: "blockchain",
@@ -96,7 +116,9 @@ const careers = [
     skills: ["Solidity", "Ethereum", "Smart Contract", "JavaScript"],
     salary: "50,000 - 120,000 บาท",
     path: "เรียน Blockchain / การพัฒนาซอฟต์แวร์",
-    image: ""
+    image: "img/Blockchain Developer.jpg",
+    detail: "สร้างระบบกระจายศูนย์ (Decentralized) และ smart contract ที่ใช้งานในภาคการเงินและธุรกิจต่าง ๆ",
+    trend: "เป็นรากฐานสำคัญของ Web3, NFT และระบบการเงินดิจิทัลในอนาคต"
   },
   {
     id: "data-eng",
@@ -105,7 +127,9 @@ const careers = [
     skills: ["SQL", "Hadoop", "Spark", "Python"],
     salary: "40,000 - 100,000 บาท",
     path: "เรียน Data Engineering / วิทยาการคอมพิวเตอร์",
-    image: ""
+    image: "img/Data Engineer.jpg",
+    detail: "เตรียมข้อมูลให้อยู่ในรูปแบบที่เหมาะสมสำหรับการวิเคราะห์โดยนักวิทยาศาสตร์ข้อมูล",
+    trend: "ข้อมูลมีมากขึ้นทุกวัน ทำให้การจัดการข้อมูลเป็นหัวใจของธุรกิจยุคใหม่"
   },
   {
     id: "digital-consult",
@@ -114,7 +138,9 @@ const careers = [
     skills: ["Business Strategy", "IT Tools", "Cloud", "Data Analytics"],
     salary: "50,000 - 150,000 บาท",
     path: "เรียนการจัดการเทคโนโลยีสารสนเทศ",
-    image: ""
+    image: "img/Digital Transformation Consultant.webp",
+    detail: "ช่วยองค์กรปรับตัวด้วยเทคโนโลยีใหม่ๆ เพื่อเพิ่มประสิทธิภาพและลดต้นทุน",
+    trend: "ทุกองค์กรต้องทำ Digital Transformation เพื่อความอยู่รอดในโลกยุคดิจิทัล"
   },
   {
     id: "bigdata",
@@ -123,7 +149,9 @@ const careers = [
     skills: ["Hadoop", "Spark", "Kafka", "NoSQL"],
     salary: "50,000 - 120,000 บาท",
     path: "เรียน Big Data / Data Science",
-    image: ""
+    image: "img/Big Data Engineer.jpg",
+    detail: "รับผิดชอบด้านการออกแบบระบบสำหรับจัดเก็บและประมวลผลข้อมูลปริมาณมหาศาล",
+    trend: "ข้อมูลปริมาณมากจาก IoT, แอป, เว็บไซต์ ทำให้อาชีพนี้มีความต้องการเพิ่มขึ้น"
   },
   {
     id: "robotics",
@@ -132,7 +160,9 @@ const careers = [
     skills: ["C++", "ROS", "Embedded Systems", "Control Systems"],
     salary: "50,000 - 110,000 บาท",
     path: "เรียนวิศวกรรมหุ่นยนต์ / Mechatronics",
-    image: ""
+    image: "img/Robotics Engineer.webp",
+    detail: "พัฒนาหุ่นยนต์สำหรับใช้งานในโรงงาน อุตสาหกรรม และการแพทย์",
+    trend: "อุตสาหกรรมหุ่นยนต์เติบโตสูงในยุค Automation และ Smart Factory"
   },
   {
     id: "vr-ar",
@@ -141,7 +171,9 @@ const careers = [
     skills: ["Unity", "C#", "3D Modeling", "ARKit/ARCore"],
     salary: "40,000 - 100,000 บาท",
     path: "เรียนสื่อดิจิทัล / วิทยาการคอมพิวเตอร์",
-    image: ""
+    image: "img/VR-AR Developer.jpg",
+    detail: "สร้างประสบการณ์แบบเสมือนจริงผ่านอุปกรณ์ VR/AR",
+    trend: "เป็นที่ต้องการมากในด้านเกม การศึกษา การแพทย์ และ Metaverse"
   },
   {
     id: "pentester",
@@ -150,7 +182,9 @@ const careers = [
     skills: ["Kali Linux", "Metasploit", "Python", "Burp Suite"],
     salary: "50,000 - 120,000 บาท",
     path: "เรียน Cybersecurity / Ethical Hacking",
-    image: ""
+    image: "img/Penetration Tester.jpg",
+    detail: "จำลองการโจมตีระบบเพื่อหาและปิดช่องโหว่ก่อนผู้ไม่หวังดี",
+    trend: "การป้องกันเชิงรุกมีความสำคัญมากขึ้นทุกปีในโลกไซเบอร์"
   },
   {
     id: "iot-engineer",
@@ -159,7 +193,9 @@ const careers = [
     skills: ["C", "Microcontroller", "Python", "MQTT"],
     salary: "45,000 - 100,000 บาท",
     path: "เรียน IoT / วิศวกรรมอิเล็กทรอนิกส์",
-    image: ""
+    image: "img/IoT Engineer.jpg",
+    detail: "ออกแบบและเชื่อมโยงอุปกรณ์ให้ทำงานร่วมกันแบบอัตโนมัติผ่านระบบเครือข่าย",
+    trend: "บ้านอัจฉริยะ เกษตรอัจฉริยะ และอุตสาหกรรม 4.0 ล้วนต้องการ IoT"
   },
   {
     id: "cloud-sec",
@@ -168,7 +204,9 @@ const careers = [
     skills: ["Cloud Security", "IAM", "Encryption", "AWS/Azure"],
     salary: "50,000 - 120,000 บาท",
     path: "เรียนความปลอดภัยบนคลาวด์",
-    image: ""
+    image: "img/Cloud Security Engineer.jpg",
+    detail: "ดูแลความปลอดภัยในระบบคลาวด์ เช่น AWS, Azure รวมถึงควบคุมสิทธิ์การเข้าถึง",
+    trend: "การย้ายระบบสู่ Cloud ทำให้ความปลอดภัยกลายเป็นเรื่องจำเป็น"
   },
   {
     id: "it-pm",
@@ -177,7 +215,8 @@ const careers = [
     skills: ["Project Management", "Agile", "Scrum", "Leadership"],
     salary: "50,000 - 150,000 บาท",
     path: "เรียนการจัดการโครงการ / IT Management",
-    image: ""
+    image: "img/IT Project Manager.jpg",
+    detail: "ควบคุมงบประมาณ กำหนดแผนงาน และดูแลทีมให้บรรลุเป้าหมายโครงการ",
+    trend: "เป็นตำแหน่งสำคัญที่ต้องมีในทุกองค์กรที่ทำงานด้านเทคโนโลยี"
   }
 ];
-

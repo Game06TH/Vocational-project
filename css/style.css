@@ -16,6 +16,7 @@ h2 {
 
 p {
   margin: 8px 0;
+  font-size: 18px
 }
 
 /* --- Header --- */
@@ -135,9 +136,11 @@ p {
 
 .career-img {
   width: 100%;
-  max-width: 300px;
+  max-width: 600px; /* ปรับความกว้างสูงสุด */
+  height: auto;     /* รักษาสัดส่วน */
+  margin: 0 auto 20px;
+  display: block;
   border-radius: 12px;
-  margin-bottom: 15px;
 }
 
 /* --- ลิงก์ทั่วไป --- */
