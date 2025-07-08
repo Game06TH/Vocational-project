@@ -1,17 +1,124 @@
+/* --- ส่วนโครงสร้างหลักของหน้า --- */
 body {
   text-align: center;
   font-family: sans-serif;
-  padding: 20px;
   line-height: 1.6;
   background-color: #FFEBD4;
 }
 
+h2, p, a {
+  color: #BE5985;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 8px 0;
+}
+
+/* --- Header --- */
+.main-header {
+  width: 100vw;
+  margin: 0;
+  padding: 30px 0;
+  background-color: #f7b5ca;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #a0456a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Footer --- */
+.main-footer {
+  background-color: #f0a8d0;
+  color: white;
+  padding: 30px 60px;
+  text-align: center;
+  font-size: 1.2em;
+  position: relative;
+  z-index: 0;
+}
+
+.main-footer p {
+  margin: 0;
+}
+
+.main-footer a {
+  color: #8e1e59;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.main-footer a:hover {
+  color: #ffffff;
+  background-color: #d86da3;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* --- ปุ่มทั่วไป --- */
+.detail-button, .back-button {
+  background: linear-gradient(135deg, #f7b5ca, #f0a8d0);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.detail-button:hover, .back-button:hover {
+  background: linear-gradient(135deg, #f0a8d0, #d97aaa);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+/* --- ปุ่มใน footer (แบบสอบถาม) --- */
+.main-footer .survey-button {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 18px;
+  background-color: #fff;
+  color: #d45aa6;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-footer .survey-button:hover {
+  background-color: #ffd6eb;
+  color: #a04080;
+  transform: scale(1.05);
+}
+
+/* --- กล่องอาชีพ --- */
+#career-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px 40px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 20px;
+}
 
 .career-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   background-color: #ffc6c6;
   padding: 20px;
   border-radius: 12px;
@@ -19,90 +126,27 @@ body {
   text-align: center;
 }
 
-#career-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 60px 20px; /* 40px ระยะห่างระหว่างแถว, 20px ระยะห่างระหว่างคอลัมน์ */
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .career-content {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;}
-
-a {
-  text-align: center;
-  color: #BE5985;
-  text-decoration: none;
-  font-weight: bold;
+  align-items: center;
 }
 
-a:hover {
-  text-align: center;
-  text-decoration: underline;
-}
 .career-img {
-  text-align: center;
   width: 100%;
   max-width: 300px;
   border-radius: 12px;
   margin-bottom: 15px;
 }
-.main-header {
-  background-color: #FFB8E0;
-  color: #BE5985;
-  padding: 20px 20px;
+
+/* --- ลิงก์ทั่วไป --- */
+a {
   text-align: center;
-  font-size: 20px;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgb(255, 237, 250);
-}
-
-.main-footer {
-  background-color: #FFB8E0;
-  color: #BE5985;
-  padding: 30px 20px;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 14px;
-}
-h2 {
-  color: #BE5985; /* ชื่ออาชีพ */
-}
-p {
-  color: #BE5985; /* คำอธิบาย */
-}
-.detail-button {
-  align-self: center;
-  padding: 10px 20px;
-  background-color: #f0a8d0;
-  color: white;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
 }
 
-.detail-button:hover {
-  background-color: #d96ca9;  /* ชมพูเข้มเมื่อ hover */
-}
-.back-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 20px;
-  background-color: #f0a8d0;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: #d96ca9;
-  cursor: pointer;
+a:hover {
+  text-decoration: underline;
 }
