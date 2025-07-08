@@ -8,21 +8,31 @@ body {
 
 
 .career-card {
-  background: #FFC6C6;
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #ffc6c6;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 5px rgb(255, 237, 250);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
 }
 
 #career-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 60px 20px; /* 40px ระยะห่างระหว่างแถว, 20px ระยะห่างระหว่างคอลัมน์ */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
+
+.career-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
 
 a {
   text-align: center;
@@ -65,4 +75,34 @@ h2 {
 }
 p {
   color: #BE5985; /* คำอธิบาย */
+}
+.detail-button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #f0a8d0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.detail-button:hover {
+  background-color: #d96ca9;  /* ชมพูเข้มเมื่อ hover */
+}
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #f0a8d0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #d96ca9;
+  cursor: pointer;
 }

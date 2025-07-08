@@ -20,10 +20,12 @@
     careers.forEach(career => { 
       htmlContent += `
         <div class="career-card">
+          <div class="career-content">
             <img src="${career.image}" alt="${career.name}" class="career-img">
             <h2>${career.name}</h2>
             <p>${career.description}</p>
-            <a href="career-detail.html?id=${career.id}">ดูรายละเอียด</a>
+          </div>
+          <a href="career-detail.html?id=${career.id}" class="detail-button">ดูรายละเอียด</a>
         </div>
       `;
     });
