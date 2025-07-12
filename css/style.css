@@ -34,7 +34,8 @@ p {
 
 /* --- Footer --- */
 .main-footer {
-  background-color: #f0a8d0;
+  background-color: #f7b5ca;
+  width: 100vw;
   color: white;
   padding: 30px 60px;
   text-align: center;
